@@ -1,0 +1,15 @@
+{
+  "name": "tddpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TDD_Practice.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
