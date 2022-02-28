@@ -8,7 +8,7 @@ Install dependencies, run `npm install` in your terminal.
 to run the test, run `npm test` in your terminal
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome.
 
 Please make sure to update tests as appropriate.
 
