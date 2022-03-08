@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 const fetchCoffee = () => {
     axios.get('https://random-data-api.com/api/coffee/random_coffee')
          .then(response => response.data)
