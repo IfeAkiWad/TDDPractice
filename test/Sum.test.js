@@ -1,4 +1,4 @@
-const sumItUp = require('../Sum')
+const sumItUp = require('../components/Sum')
 
 test('sum of the integers in the array', () => {
     const numbers = [1, 2, 3, 4]

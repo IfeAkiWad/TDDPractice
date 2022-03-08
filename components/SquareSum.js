@@ -2,10 +2,10 @@
 For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9. */
 
 const squareSum = (numbers) => {
-    var total = 1;
+    let total = 1;
 
-    for(var i = 0; i < numbers.length; i++) {
-    console.log(total += numbers[i] * numbers[i]); 
+    for(let i = 0; i < numbers.length; i++) {
+        total += numbers[i] * numbers[i] 
     }
 
     return total;

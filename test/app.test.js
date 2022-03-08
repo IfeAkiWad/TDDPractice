@@ -1,4 +1,4 @@
-const allCap = require('../app')
+const allCap = require('../components/app')
 
 test("should be capitalized and letters in alphabetical order", () => {
     const city = 'jerusalem'

@@ -1,4 +1,4 @@
-const squareSum = require('../SquareSum')
+const squareSum = require('../components/SquareSum')
 
 test('squares each number passed into it and then sums the results together', () => {
     const numbers = [1,3,4]
