@@ -83,7 +83,7 @@ describe('test', () => {
 
     
 
-    const machine = new VendingMachine(items,11.20)
+    const machine = new VendingMachine(items, 10.00)
 
     test('If the money given to the machine is less than the item cost return "Not enough money!"', () => { 
         expect(machine.vend('A04', 0.10)).toBe("Not enough money!")
@@ -102,7 +102,8 @@ describe('test', () => {
     })
 
     test('If an invalid item is selected return "Invalid selection! : Money in vending machine = 11.20"', () => {
-        expect(machine.vend("Z01", 0.60)).toBe("Invalid selection! : Money in vending machine = 10.00")
+        const invalidItem = !items
+        expect(machine.vend(invalidItem, invalidItem)).toBe("Invalid selection! : Money in vending machine = 10.00")
     })
     
 })
