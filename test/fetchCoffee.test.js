@@ -4,6 +4,6 @@ test('must fetch correct coffee blend name', () => {
     expect.assertions(1)
     return fetchCoffee()
         .then(data => {
-         expect(data.blend_name).toEqual('Joe Look')
+         expect(data.title).toEqual('delectus aut autem')
         })
 })

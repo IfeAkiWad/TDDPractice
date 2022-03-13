@@ -10,6 +10,12 @@ class VendingMachine {
             return item.code === selectionCode
         })
 
+        const changeAmount = userMoneyAmount - item.price
+
+        const invalidItem = !item
+
+        if(invalidItem) return `Invalid selection! : Money in vending machine = ${this.initialMoneyInVending}`
+
        if (userMoneyAmount < item.price) {
            return "Not enough money!"
        }
@@ -18,13 +24,17 @@ class VendingMachine {
            return `${item.name}: Out of stock!`
        }
 
-       if(item) {
-           return `Vending ${item.name} with ${userMoneyAmount - item.price} change`
+       if(item && userMoneyAmount > item.price) {
+           return `Vending ${item.name} with ${changeAmount} change`
+        }else{ /*if(userMoneyAmount = item.price){*/
+            return `Vending ${item.name}`
         }
+        // else{
+        //     return `Invalid selection! : Money in vending machine = ${console.log(this.initialMoneyInVending)}`
 
-       if(item) {
-           retrun
-       } 
+        // } 
+
+       
     }
 }
 

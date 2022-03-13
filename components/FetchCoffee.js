@@ -1,9 +1,9 @@
 const axios = require('axios')
 
 const fetchCoffee = () => {
-    axios.get('https://random-data-api.com/api/coffee/random_coffee')
-         .then(response => response.data)
-         .catch(error => 'error fetching!')
+    axios.get('https://jsonplaceholder.typicode.com/todos/1')
+         .then(response => console.log(response.data))
+        //  .catch(error)
 }
 
 module.exports = fetchCoffee
